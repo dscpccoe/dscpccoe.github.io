@@ -7,14 +7,14 @@ import reportWebVitals from './reportWebVitals';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
