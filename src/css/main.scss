@@ -1,0 +1,278 @@
+.menu-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 6em;
+  width: 6em;
+  margin: -3em;
+  text-align: center;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px -11px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  .footer {
+    overflow-x: hidden !important;
+  }
+  p {
+    display: none;
+  }
+
+  i {
+    color: white;
+    font-size: 2em;
+    display: flex;
+    margin: 10%;
+    // transition: font-size 2s ease-out;
+  }
+
+  &:hover {
+    height: 7.3em;
+    width: 7.3em;
+    margin: -3.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    i {
+      font-size: 2.2em;
+    }
+    .content {
+      display: block;
+      text-align: center;
+      font-size: 19px;
+      transition: 0.4s ease-in-out;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .menu-item {
+    height: 4.5em;
+    width: 4.5em;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    i {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.item-show {
+  opacity: 1;
+  transition: height 0.3s ease-out, width 0.3s ease-out, margin 0.3s ease-out,
+    opacity 0.5s ease-out;
+}
+
+.item-hide {
+  opacity: 0;
+}
+
+.menu-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1900;
+  background-color: #f3f3f3;
+}
+
+.button-bg {
+  position: relative;
+  height: 18em;
+  width: 18em;
+  border-radius: 50%;
+  margin: 1.75em auto 0;
+  z-index: 1000;
+  top: 50%;
+  margin-top: -9em;
+}
+.social-links {
+  transition: 1s ease-in-out !important;
+}
+.social-links :hover {
+  color: #b3b3b3;
+}
+.typewriter h1 {
+  color: black;
+  font-size: 43px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #0f9d58; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.06em; /* Adjust as needed */
+  animation: typing 7.9s steps(30, end) infinite,
+    blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  39% {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #0f9d58;
+  }
+}
+
+@media (max-width: 1395px) {
+  .typewriter h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1295px) {
+  .typewriter h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1100px) {
+  .typewriter h1 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 500px) {
+  .typewriter h1 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 500px) {
+  .developer-logo img {
+    max-width: 80%;
+  }
+}
+.header-text p {
+  font-size: 20px;
+}
+.header-text h4 {
+  font-size: 22px;
+}
+@media (max-width: 400px) {
+  .typewriter h1 {
+    font-size: 22px;
+  }
+  .header-text h4 {
+    font-size: 17px;
+  }
+  .header-text p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 384px) {
+  .typewriter h1 {
+    font-size: 20px;
+  }
+  .header-text h4 {
+    font-size: 14px;
+  }
+  .header-text p {
+    font-size: 13px;
+  }
+}
+
+.menu-toggle {
+  position: absolute;
+  right: 40px;
+
+  z-index: 2000;
+  margin-top: 0.8em;
+
+  height: 3.7em;
+  width: 3.7em;
+  border-radius: 50%;
+  background-color: #6c757d;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+
+  i {
+    font-size: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .menu-toggle {
+    position: absolute;
+    right: 5px;
+
+    z-index: 2000;
+    margin-top: 0.7em;
+
+    height: 3.1em;
+    width: 3.1em;
+    border-radius: 50%;
+    background-color: #6c757d;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+  }
+}
+.menu-toggle :hover {
+  background-color: #353535;
+}
+.menu-toggle:focus {
+  outline: none;
+}
+
+.toggle-open {
+  border: 3px solid #6c757d;
+  color: white;
+  top: 50%;
+  left: 50%;
+  margin-top: -2.3em;
+  margin-left: -2.3em;
+  animation: fadeIn 1s 1 ease-in;
+}
+.head {
+  display: inline-block;
+}
+.toggle-closed {
+  border: 3px solid white;
+  color: white;
+}
+.Typewriter__cursor {
+  display: none;
+}
+.menu-wrapper-open {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s ease-out;
+}
+
+.menu-wrapper-closed {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.animate-menu {
+  animation: spin 1.3s 1 cubic-bezier(0.175, 0.585, 0.08, 1.2);
+  animation-delay: 0.2s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
