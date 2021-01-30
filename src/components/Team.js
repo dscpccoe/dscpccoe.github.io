@@ -268,6 +268,26 @@ const AnimeTeam = [
     },
 ]
 
+const CPTeam = [
+    {
+        position: 'Competitive Programmer',
+        Name: 'Harish Dalal',
+        instid: 'https://www.instagram.com/_harish_dalal',
+        gitid: 'https://github.com/harish-dalal',
+        linkid: 'https://www.linkedin.com/in/harish-dalal136/',
+        img: 'https://drive.google.com/uc?id=16nSkakjA76E4_wk5ZwrCvY1JGTCSqw7i'
+        
+    },
+    {
+        position: 'Competitive Programmer',
+        Name: 'Abhishek Ove',
+        instid: 'https://www.instagram.com/abhishekove_28',
+        gitid: 'https://github.com/abhishekove',
+        linkid: 'https://www.linkedin.com/in/abhishek-ove/',
+        img: 'https://drive.google.com/uc?id=1Bwr4o3Jh5DkvKGjQbi6Vf4gismPRrbA2',
+    },
+]
+
 const SETeam = [
     {
         position: 'SE Co-ordinator',
@@ -405,6 +425,19 @@ function Team() {
 
                     {AnimeTeam.map((member) => (
                         <div className="col-md-12">
+                            <Card name={member.Name} position={member.position} gitid={member.gitid} instid={member.instid} linkid={member.linkid} img={member.img} />
+                        </div>
+                    )
+                    )}
+                </div>
+            </div>
+            
+                <div className=" container-fluid">
+                <h1 className="text-center">Competitive Programming</h1>
+                <div className="row  justify-content-md-center">
+
+                    {CPTeam.map((member) => (
+                        <div className="col-md-6">
                             <Card name={member.Name} position={member.position} gitid={member.gitid} instid={member.instid} linkid={member.linkid} img={member.img} />
                         </div>
                     )
