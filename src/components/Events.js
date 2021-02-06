@@ -192,7 +192,7 @@ function Events(){
 
     return(
         <div  style = {{display : 'flex' , flexDirection : 'column', minHeight:"75vh"}}>
-            <h1 className="text-center my-3">Events</h1>
+            <h1 className="text-center font-weight-bold my-3">Events</h1>
         <Tabs
             value = {currentTab}
             onChange = {TabChange}

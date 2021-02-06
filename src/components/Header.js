@@ -2,7 +2,7 @@ import React from 'react';
 import 'react-typewriting-effect/dist/index.css';
 import Img from '../assets/Capture.JPG';
 import FadeIn from 'react-fade-in';
-import {useState} from "react";
+
 
  
 
@@ -22,7 +22,7 @@ function Header(){
                     <br/>
                     <h4 className="" style={{color:"#404040"}}>Pimpri Chinchwad College of Engineering</h4>
                     <br/>
-                    <p className="" style={{width:"fit-content"}} >Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. 
+                    <p className="" style={{width:"fit-content",fontWeight:"lighter !important"}} >Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. 
                     A community of <span className="text-success font-weight-bold">Developers</span>, <span className="text-danger font-weight-bold">Designers</span> and <span className="text-primary font-weight-bold">Programmers</span> 
                     . By joining a DSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.
 
