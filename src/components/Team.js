@@ -348,7 +348,7 @@ function Team() {
     return (
         <div className="">
 
-            <h1 className="text-center mt-3">Team DSC</h1>
+            <h1 className="text-center font-weight-bold mt-3">Team DSC</h1>
             <div className="container-fluid " >
 
                 <div className="row justify-content-md-center">
@@ -361,7 +361,7 @@ function Team() {
                 </div>
             </div>
             <div className=" container-fluid " >
-                <h1 className="text-center">Core Team</h1>
+                <h1 className="text-center font-weight-bold">Core Team</h1>
                 <div className="row justify-content-md-center ">
                     {CoreTeam.map((member) => (
                         <div className="col-md-4">
@@ -373,7 +373,7 @@ function Team() {
             </div>
 
             <div className=" container-fluid " >
-                <h1 className="text-center">AI/ML Team</h1>
+                <h1 className="text-center font-weight-bold">AI/ML Team</h1>
                 <div className="row justify-content-md-center">
                     {AITeam.map((member) => (
                         <div className="col-md-4">
@@ -382,7 +382,7 @@ function Team() {
                     )
                     )}
                 </div>
-                <h1 className="text-center">Front End Team</h1>
+                <h1 className="text-center font-weight-bold">Front End Team</h1>
                 <div className="row justify-content-md-center">
                     {FrontEndTeam.map((member) => (
                         <div className="col-md-4">
@@ -391,7 +391,7 @@ function Team() {
                     )
                     )}
                 </div>
-                <h1 className="text-center">Back End Team</h1>
+                <h1 className="text-center font-weight-bold">Back End Team</h1>
                 <div className="row justify-content-md-center">
                     {BackendTeam.map((member) => (
                         <div className="col-md-4">
@@ -400,7 +400,7 @@ function Team() {
                     )
                     )}
                 </div>
-                <h1 className="text-center">Android Team</h1>
+                <h1 className="text-center font-weight-bold">Android Team</h1>
                 <div className="row justify-content-md-center">
                     {AndroidTeam.map((member) => (
                         <div className="col-md-4">
@@ -409,7 +409,7 @@ function Team() {
                     )
                     )}
                 </div>
-                <h1 className="text-center">Cloud Team</h1>
+                <h1 className="text-center font-weight-bold">Cloud Team</h1>
                 <div className="row justify-content-md-center">
                     {CloudTeam.map((member) => (
                         <div className="col-md-4">
@@ -420,7 +420,7 @@ function Team() {
                 </div>
             </div>
             <div className=" container-fluid">
-                <h3 className="text-center">Animation & Graphics</h3>
+                <h3 className="text-center font-weight-bold">Animation & Graphics</h3>
                 <div className="row justify-content-md-center">
 
                     {AnimeTeam.map((member) => (
@@ -433,7 +433,7 @@ function Team() {
             </div>
             
                 <div className=" container-fluid">
-                <h1 className="text-center">Competitive Programming</h1>
+                <h1 className="text-center font-weight-bold">Competitive Programming</h1>
                 <div className="row  justify-content-md-center">
 
                     {CPTeam.map((member) => (
@@ -446,7 +446,7 @@ function Team() {
             </div>
 
             <div className=" container-fluid">
-                <h1 className="text-center">SE Co-ordinators</h1>
+                <h1 className="text-center font-weight-bold">SE Co-ordinators</h1>
                 <div className="row  justify-content-md-center">
 
                     {SETeam.map((member) => (
