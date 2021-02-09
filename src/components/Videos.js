@@ -51,7 +51,7 @@ function InstaCards(props){
 function Videos() {
     return (
       <div className="">
-        <h1 className="text-center">Videos</h1>
+        <h1 className="text-center font-weight-bold">Videos</h1>
       <div className="container-fluid  " >
         
        <div className="row mt-4 mb-5  justify-content-around">

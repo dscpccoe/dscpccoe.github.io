@@ -268,6 +268,26 @@ const AnimeTeam = [
     },
 ]
 
+const CPTeam = [
+    {
+        position: 'Competitive Programmer',
+        Name: 'Harish Dalal',
+        instid: 'https://www.instagram.com/_harish_dalal',
+        gitid: 'https://github.com/harish-dalal',
+        linkid: 'https://www.linkedin.com/in/harish-dalal136/',
+        img: 'https://drive.google.com/uc?id=16nSkakjA76E4_wk5ZwrCvY1JGTCSqw7i'
+
+    },
+    {
+        position: 'Competitive Programmer',
+        Name: 'Abhishek Ove',
+        instid: 'https://www.instagram.com/abhishekove_28',
+        gitid: 'https://github.com/abhishekove',
+        linkid: 'https://www.linkedin.com/in/abhishek-ove/',
+        img: 'https://drive.google.com/uc?id=1Bwr4o3Jh5DkvKGjQbi6Vf4gismPRrbA2',
+    },
+]
+
 const SETeam = [
     {
         position: 'SE Co-ordinator',
@@ -328,7 +348,7 @@ function Team() {
     return (
         <div className="">
 
-            <h1 className="text-center mt-3">Team DSC</h1>
+            <h1 className="text-center font-weight-bold mt-3">Team DSC</h1>
             <div className="container-fluid " >
 
                 <div className="row justify-content-md-center">
@@ -341,7 +361,7 @@ function Team() {
                 </div>
             </div>
             <div className=" container-fluid " >
-                <h1 className="text-center">Core Team</h1>
+                <h1 className="text-center font-weight-bold">Core Team</h1>
                 <div className="row justify-content-md-center ">
                     {CoreTeam.map((member) => (
                         <div className="col-md-4">
@@ -353,7 +373,7 @@ function Team() {
             </div>
 
             <div className=" container-fluid " >
-                <h1 className="text-center">AI/ML Team</h1>
+                <h1 className="text-center font-weight-bold">AI/ML Team</h1>
                 <div className="row justify-content-md-center">
                     {AITeam.map((member) => (
                         <div className="col-md-4">
@@ -362,7 +382,7 @@ function Team() {
                     )
                     )}
                 </div>
-                <h1 className="text-center">Front End Team</h1>
+                <h1 className="text-center font-weight-bold">Front End Team</h1>
                 <div className="row justify-content-md-center">
                     {FrontEndTeam.map((member) => (
                         <div className="col-md-4">
@@ -371,7 +391,7 @@ function Team() {
                     )
                     )}
                 </div>
-                <h1 className="text-center">Back End Team</h1>
+                <h1 className="text-center font-weight-bold">Back End Team</h1>
                 <div className="row justify-content-md-center">
                     {BackendTeam.map((member) => (
                         <div className="col-md-4">
@@ -380,7 +400,7 @@ function Team() {
                     )
                     )}
                 </div>
-                <h1 className="text-center">Android Team</h1>
+                <h1 className="text-center font-weight-bold">Android Team</h1>
                 <div className="row justify-content-md-center">
                     {AndroidTeam.map((member) => (
                         <div className="col-md-4">
@@ -389,7 +409,7 @@ function Team() {
                     )
                     )}
                 </div>
-                <h1 className="text-center">Cloud Team</h1>
+                <h1 className="text-center font-weight-bold">Cloud Team</h1>
                 <div className="row justify-content-md-center">
                     {CloudTeam.map((member) => (
                         <div className="col-md-4">
@@ -400,8 +420,8 @@ function Team() {
                 </div>
             </div>
             <div className=" container-fluid">
-                <h3 className="text-center">Animation & Graphics</h3>
-                <div className="row justify-content-md-center  align-items-center ">
+                <h3 className="text-center font-weight-bold">Animation & Graphics</h3>
+                <div className="row justify-content-md-center">
 
                     {AnimeTeam.map((member) => (
                         <div className="col-md-12 mx-auto d-flex justify-content-center">
@@ -413,7 +433,20 @@ function Team() {
             </div>
 
             <div className=" container-fluid">
-                <h1 className="text-center">SE Co-ordinators</h1>
+                <h1 className="text-center font-weight-bold">Competitive Programming</h1>
+                <div className="row  justify-content-md-center">
+
+                    {CPTeam.map((member) => (
+                        <div className="col-md-6">
+                            <Card name={member.Name} position={member.position} gitid={member.gitid} instid={member.instid} linkid={member.linkid} img={member.img} />
+                        </div>
+                    )
+                    )}
+                </div>
+            </div>
+
+            <div className=" container-fluid">
+                <h1 className="text-center font-weight-bold">SE Co-ordinators</h1>
                 <div className="row  justify-content-md-center">
 
                     {SETeam.map((member) => (
