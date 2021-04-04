@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Img from '../assets/logos/dscpccoe.png';
 
 const Footer = ()=>{
@@ -12,16 +13,20 @@ const Footer = ()=>{
 
                             
                         </div>
-                        <div className="social-media-links">
+                        <div className="social-media-links" style={{display:"flex",flexDirection:"column",justifyContent:"space-evenly"}}>
                             
+                                <div className="my-3">
                                 <a href="https://www.facebook.com/dscpccoe/" target="blank" style={{fontSize:"28px", color:"#999999"}} className="mx-4 social-links"><i className="fab fa-facebook"></i></a>
                                 <a href="https://github.com/dscpccoe" target="blank" style={{fontSize:"28px", color:"#999999"}} className="mx-4 social-links"><i className="fab fa-github"></i></a>
                                 <a href="https://www.instagram.com/dscpccoe/?hl=en" target="blank" style={{fontSize:"28px", color:"#999999"}} className="mx-4 social-links"><i className="fab fa-instagram"></i></a>
                                 <a href="https://www.linkedin.com/company/dsc-pccoe/" target="blank" style={{fontSize:"28px", color:"#999999"}} className="mx-4 social-links"><i className="fab fa-linkedin"></i></a>
                                 <a href="https://twitter.com/dscpccoe?lang=en" target="blank" style={{fontSize:"28px", color:"#999999"}} className="mx-4 social-links"><i className="fab fa-twitter"></i></a>
                                 <a href="https://www.youtube.com/channel/UCSCRtLfcsJIPi2wMu9my5-g" target="blank" style={{fontSize:"28px", color:"#999999"}} className="mx-4 social-links"><i className="fab fa-youtube"></i></a>
+                                </div>
+                                <h6 className="ml-4">Made with <span>&#128151;</span> by <Link to="/team">Frontend Team</Link></h6>
 
                         </div>
+                        
                     </div>
             </div>
     
