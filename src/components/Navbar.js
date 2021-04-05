@@ -48,6 +48,13 @@ export const menuData = [
     href: "/videos",
     click: itemClick
   },
+  {
+    color: "#DB4437",
+    icon: "fa-link",
+    content: 'Links',
+    href: "/links",
+    click: itemClick
+  },
 ];
 
 

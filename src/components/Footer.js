@@ -5,11 +5,11 @@ import Img from '../assets/logos/dscpccoe.png';
 const Footer = ()=>{
     return(
         
-            <div className="footer pt-2 pl-1 mb-n5" style={{backgroundColor:"#f2f2f2", minHeight:"120px", display:"flex", flexDirection:"column", justifyContent:"center"}} >
+            <div className="footer pt-2 mt-3 pl-1 mb-n5" style={{backgroundColor:"#f2f2f2", minHeight:"120px", display:"flex", flexDirection:"column", justifyContent:"center"}} >
                     <div style={{display:"flex", justifyContent:"space-evenly", alignItems:"center"}}>
                         <div className="image" style={{display:"flex", flexDirection:"column", justifyContent:"space-between"}}>
                             <img src={Img} alt="im" />
-                            <h6 className=" ml-2 font-weight-lighter" style={{fontWeight:"lighter !important",color:"gray", fontFamily:""}}><i style={{fontSize:"14px", fontWeight:"lighter"}} class="mt-3 far fa-copyright"></i> DSC PCCoE 2020</h6>
+                            <h6 className=" ml-2 font-weight-lighter" style={{fontWeight:"lighter !important",color:"gray", fontFamily:""}}><i style={{fontSize:"14px", fontWeight:"lighter"}} className="mt-3 far fa-copyright"></i> DSC PCCoE 2020</h6>
 
                             
                         </div>

@@ -30,11 +30,11 @@ function WhatWeDo(props) {
       <div className="col-md-6 about-cards d-flex justify-content-center">
       <div className="card  mb-3" >
   <br></br>
-  <i class="fas fa-lightbulb ghost-green mx-auto fa-2x"></i>
-  <div class="card-header bg-transparent card-title text-center border-primary text-primary"><b>Why DSC</b></div>
-  <div class="card-body d-flex justify-content-center align-items-center">
+  <i className="fas fa-lightbulb ghost-green mx-auto fa-2x"></i>
+  <div className="card-header bg-transparent card-title text-center border-primary text-primary"><b>Why DSC</b></div>
+  <div className="card-body d-flex justify-content-center align-items-center">
 
-    <p class="card-title font-weight-bold">For students to learn development skills, solve problems through technology and inspire them to be world class developers and changemakers.By joining a DSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.</p></div>
+    <p className="card-title font-weight-bold">For students to learn development skills, solve problems through technology and inspire them to be world class developers and changemakers.By joining a DSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.</p></div>
   
 </div>
     

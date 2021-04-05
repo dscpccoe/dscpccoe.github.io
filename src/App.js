@@ -9,7 +9,9 @@ import Navbar from './components/Navbar';
 // import About from './components/AboutUs';
 import Team from './components/Team';
 import Home from './components/Home';
+import Link from './components/Links';
 import Blog from './components/main';
+import Page404 from './components/404Page';
 import Footer from './components/Footer';
 import Videos from './components/Videos';
 import Connect from './components/Connect';
@@ -27,8 +29,11 @@ function AllComponents(props){
       <Route exact path="/projects" component={Blog}/>
       <Route exact path="/events" component = {Events}/>
       <Route exact path="/videos" component = {Videos}/>
+      <Route exact path="/links" component = {Link}/>
       <Route exact path="/connect" component = {Connect}/>
       <Route exact path="/" component={Home} />
+      <Route exact path="*" component={Page404} />
+
       </Switch>
       <Footer/>
     </div>
