@@ -21,7 +21,7 @@ function Links() {
             <div key={index} className="container-fluid linked mt-4">
                 <div className="rainbow mt-4">
              <ul >
-                 <li className="TheNewClass"><a href="https://google.com" target="BLANK" title={data[member]['name']}>{data[member]['name']}</a></li>
+                 <li className="TheNewClass"><a href={data[member]['link']} target="BLANK" title={data[member]['name']}>{data[member]['name']}</a></li>
              </ul>
          </div>
          </div>
