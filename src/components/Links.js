@@ -2,15 +2,7 @@ import React,{useEffect,useState} from 'react'
 import '../css/links.scss';
 
 
-const Arraylinks = [{
-  name:"Discord",
-  link:"#",
-},
-{
-    name:"Hello",
-    link:"#",
-},
-]
+
 
 
 function Links() {
@@ -29,7 +21,7 @@ function Links() {
             <div key={index} className="container-fluid linked mt-4">
                 <div className="rainbow mt-4">
              <ul >
-                 <li className=""><a href="https://google.com" target="BLANK" title={data[member]['name']}>{data[member]['name']}</a></li>
+                 <li className="TheNewClass"><a href={data[member]['link']} target="BLANK" title={data[member]['name']}>{data[member]['name']}</a></li>
              </ul>
          </div>
          </div>

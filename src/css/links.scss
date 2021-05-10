@@ -61,7 +61,7 @@ a:link, a:visited, a:active {
     color:#817f7f;
     text-decoration:none;
 }
-ul li {
+.TheNewClass{
     position: relative;
 	align-items: center;
     display: inline-block;
@@ -69,13 +69,13 @@ ul li {
 
     
 }
-ul li:hover, ul li:focus {
+.TheNewClass:hover, .TheNewClass:focus {
     	outline: none;
 }
-ul li a {
+.TheNewClass a {
     position: relative;
     display: inline-block;
-    color: #fff;
+    color: rgb(49, 59, 59);
     font-size:1.5em;
     text-decoration: none;
     text-transform: uppercase;
@@ -83,16 +83,16 @@ ul li a {
     transition: transform 0.5s ease;
     -webkit-transition: transform 0.5s ease;
 }
-ul li a:before{
+.TheNewClass a:before{
     position: absolute;
     top: 100%;
     content: attr(title); /* The selector for Wordpress */
-    color:#333;
+    color:rgb(241, 47, 47);
     -webkit-transform: translate3d(0,0,0);
     -moz-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-ul li:hover a, ul li:focus a {
+.TheNewClass:hover a, .TheNewClass:focus a {
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
     transform: translateY(-100%);
